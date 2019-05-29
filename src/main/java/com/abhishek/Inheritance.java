@@ -7,7 +7,11 @@ import java.util.Date;
 public class Inheritance
 {
     public static void main(String [] args) throws ParseException {
-        Student s1=new Student();
+        Student s1= new Student();
+
+
+
+
         Faculty f1=new Faculty();
 
 

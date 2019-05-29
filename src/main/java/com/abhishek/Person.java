@@ -2,7 +2,7 @@ package com.abhishek;
 
 import java.util.Date;
 
-public class Person {
+public abstract class Person implements IDisplay{
     private int id;
     private String firstName;
     private String lastName;
@@ -70,4 +70,6 @@ public class Person {
     public String getfullname() {
      return firstName+" "+lastName;
     }
+
+
 }
