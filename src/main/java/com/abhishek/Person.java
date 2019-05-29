@@ -55,6 +55,14 @@ public class Person {
         return computer;
     }
 
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
     public void setComputer(String computer) {
         this.computer = computer;
     }

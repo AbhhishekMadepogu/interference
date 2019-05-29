@@ -9,6 +9,8 @@ public class Inheritance
     public static void main(String [] args) throws ParseException {
         Student s1=new Student();
         Faculty f1=new Faculty();
+
+
         s1.setId(1);
         s1.setFirstName("abhishek");
         s1.setLastName("Madepogu");
@@ -18,6 +20,7 @@ public class Inheritance
         SimpleDateFormat sdf=new SimpleDateFormat("yyyy/mm/dd");
         String dateinstring="1997/05/10";
         Date date=sdf.parse(dateinstring);
+        s1.setBirthday(date);
         s1.setComputer("Laptop");
         float marks[]={50,60,70,80};
         s1.setMarks(marks);
@@ -28,6 +31,10 @@ public class Inheritance
         f1.setLastName("patel");
         f1.setEmail("priteshpatel@gmail.com");
         f1.setGender("male");
+        SimpleDateFormat sdf3=new SimpleDateFormat("yyyy/mm/dd");
+        String dateinString="1997/05/10";
+         date=sdf3.parse(dateinstring);
+         f1.setBirthday(date);
         f1.setComputer("laptop");
         SimpleDateFormat sdf1=new SimpleDateFormat("yyyy/mm/dd");
         String dateInString="2017/12/15";
