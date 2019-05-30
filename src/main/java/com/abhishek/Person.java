@@ -11,6 +11,19 @@ public abstract class Person implements IDisplay{
     private Date birthday;
     private String  computer;
 
+    public Person() {
+    }
+
+    public Person(int id, String firstName, String lastName, String email, String gender, Date birthday, String computer) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.gender = gender;
+        this.birthday = birthday;
+        this.computer = computer;
+    }
+
     public int getId() {
         return id;
     }

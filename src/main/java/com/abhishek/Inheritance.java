@@ -12,6 +12,7 @@ public class Inheritance
 
 
 
+
         Faculty f1=new Faculty();
 
 
@@ -28,6 +29,7 @@ public class Inheritance
         s1.setComputer("Laptop");
         float marks[]={50,60,70,80};
         s1.setMarks(marks);
+        s1.display();
 
 
         f1.setId(2);
@@ -46,6 +48,7 @@ public class Inheritance
         f1.setDeptName("computer science");
         f1.setDesignation("professor");
         f1.setSalary(70000.00f);
+        f1.display();
 
 
 

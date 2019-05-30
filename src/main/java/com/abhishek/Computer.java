@@ -4,6 +4,14 @@ public class Computer {
     private int id;
     private String manufacturerName;
 
+    public Computer() {
+    }
+
+    public Computer(int id, String manufacturerName) {
+        this.id = id;
+        this.manufacturerName = manufacturerName;
+    }
+
     public int getId() {
         return id;
     }

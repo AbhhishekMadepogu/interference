@@ -8,6 +8,24 @@ public class Faculty extends  Person {
     private String designation;
     private float salary;
 
+    public Faculty() {
+    }
+
+    public Faculty(Date joiningDate, String deptName, String designation, float salary) {
+        this.joiningDate = joiningDate;
+        this.deptName = deptName;
+        this.designation = designation;
+        this.salary = salary;
+    }
+
+    public Faculty(int id, String firstName, String lastName, String email, String gender, Date birthday, String computer, Date joiningDate, String deptName, String designation, float salary) {
+        super(id, firstName, lastName, email, gender, birthday, computer);
+        this.joiningDate = joiningDate;
+        this.deptName = deptName;
+        this.designation = designation;
+        this.salary = salary;
+    }
+
     public void setSalary(float salary) {
         this.salary = salary;
     }
@@ -47,6 +65,19 @@ public class Faculty extends  Person {
 
     @Override
     public void display() {
+        System.out.println("faculty id"+getId());
+        System.out.println("First Name"+getFirstName());
+        System.out.println("Last Name"+getLastName());
+        System.out.println("Full Name"+getfullname());
+        System.out.println("email"+getEmail());
+        System.out.println("gender"+getGender());
+        System.out.println("birthday"+getBirthday());
+        System.out.println("computer"+getComputer());
+        System.out.println("joining date"+getJoiningDate());
+        System.out.println("dept name"+getDeptName());
+        System.out.println("designation"+getDesignation());
+        System.out.println("salary"+getSalary());
+
 
     }
 }
